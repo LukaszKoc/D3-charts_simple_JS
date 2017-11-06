@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel='stylesheet' href="assets/styles.css"></link>
+<link rel='stylesheet' href='table/tableCSS.css'>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="assets/data/MainData.js"></script>
+<script src="assets/data/DataGenerator.js"></script>
+<script src="table/TableController.js"></script>
+<script src="donutGraph/GaugeController.js"></script>
+<script src="linearGraph/LinearGraphController.js"></script>
+
+<script src="MainController.js"></script>
+
+<body>
+	<h1 style="text-align: center;">MVA vehicles counts and sales by
+		month from 2002 to 2015</h1>
+	<table class="box">
+		<tr>
+			<th style="padding-top: 0px;">
+				<table>
+					<tr>
+						<th>
+							<table style="width: 500px; height: 10px;">
+								<tr>
+									<td>
+										<div style="text-align: center; height: 10px; color: green;">
+											Sold cars in years
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table style="width: 500px; height: 10px;">
+											<tr>
+												<td>
+													<div style="padding-left: 130px; text-align: left; color: steelblue;">
+														New cars
+													</div>
+												</td>
+												<td>
+													<div style="padding-right: 30px; text-align: right; color: red;">
+														Secound hand cars
+													</div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</th>
+					</tr>
+					<tr>
+						<th class="box" style="width: 400px; height: 250px;">
+							<div class="tablecss" id="year-table-area"></div>
+						</th>
+					</tr>
+
+					<tr class="box">
+						<th>
+							<table style="width: 500px;">
+								<tr>
+									<td>
+										<table style="width: 500px; height: 10px;">
+											<tr>
+												<td style="width: 150px;"><div
+														style="padding-left: 5px; text-align: center; color: green;">Number
+														of sold cars</div></td>
+												<td style="width: 150px;">
+													<div id="income" style="text-align: center; color: red;">Used
+														cars</div> <br>
+													<div id="income"
+														style="text-align: center; color: steelblue;">New
+														cars</div>
+												</td>
+												<td style="width: 150px;"><div id="income"
+														style="padding-right: 5px; text-align: center; color: green;">Total
+														income of sold cars</div></td>
+											</tr>
+
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table style="width: 500px; height: 10px;">
+											<tr>
+												<th id="donut-area1"
+													style="width: 200px; height: 240px; padding-left: 25px;">
+												</th>
+												<th id="donut-area2"
+													style="width: 200px; height: 240px; padding-left: 25px;">
+												</th>
+											</tr>
+
+										</table>
+									</td>
+								</tr>
+							</table>
+						</th>
+
+
+					</tr>
+				</table>
+			</th>
+			<th>
+				<table id="middle-area">
+					<tr>
+						<th>
+							<table style="width: 900px;">
+								<tr>
+									<td><div
+											style="padding-left: 5px; text-align: left; color: steelblue;">New
+											Cars $</div></td>
+									<td><div style="text-align: center; color: green;">Total
+											income of sold cars in months</div></td>
+									<td><div
+											style="padding-right: 5px; text-align: right; color: red;">Secound
+											hand cars $</div></td>
+
+								</tr>
+							</table>
+						</th>
+					</tr>
+					<tr>
+						<th id="line-area" class="box"
+							style="width: 900px; height: 300px;"></th>
+					</tr>
+					<tr>
+						<th>
+							<table style="width: 900px;">
+								<tr>
+									<td><div
+											style="padding-left: 315px; text-align: left; color: steelblue;">New
+											Cars</div></td>
+
+									<td><div
+											style="padding-right: 110px; text-align: right; color: red;">Secound
+											hand cars</div></td>
+
+
+								</tr>
+							</table>
+						</th>
+					</tr>
+					<tr>
+						<th class="box" style="width: 500px; height: 250px;">
+							<div class="tablecss" id="month-table-area"></div>
+						</th>
+					</tr>
+				</table>
+			</th>
+		</tr>
+	</table>
+
+</body>
+
+

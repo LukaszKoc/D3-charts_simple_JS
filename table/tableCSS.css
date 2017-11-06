@@ -1,0 +1,35 @@
+ .tablecss th, td {
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:1em;
+    padding-left:7px;
+    padding-right:7px;
+    padding-top:4px;
+    padding-bottom:4px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.tablecss th {
+    color:white;
+    background-color:steelblue;
+}
+
+
+.tablecss td {
+    border:1px solid steelblue;
+}
+
+.tablecss td.rowkey {
+    text-align:left;
+}
+
+
+.tablecss tr:hover {
+    color:#000000;
+    background-color:#E0E0E0;
+}
+
+
+.tablecss tr[chosen=true] {
+    background-color:#B5CDE1;
+}
